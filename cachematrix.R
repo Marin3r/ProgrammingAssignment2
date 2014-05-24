@@ -3,7 +3,8 @@
 
 ## Write a short comment describing this function
 
-## Creates a special "matrix" object that can cache its inverse.
+## Creates a special "matrix" object within a list that can cache
+## its inverse.
 
 makeCacheMatrix <- function(x = matrix()) {
         m <- NULL
@@ -33,10 +34,9 @@ makeCacheMatrix <- function(x = matrix()) {
 # listB <- makeCacheMatrix(matrixA)
 
 
+## Write a short comment describing this function
 
-
-## Computes the inverse. If the inverse has already been calculated (and the matrix has not changed),
-## then the cachesolve should retrieve the inverse from the cache.
+## Computes the inverse on the matrix within the list
 
 cacheSolve <- function(x, ...) {
         ## get the inverse of the matrix.
