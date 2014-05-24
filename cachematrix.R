@@ -32,15 +32,15 @@ makeCacheMatrix <- function(x = matrix()) {
 #             byrow = TRUE)        # fill matrix by rows 
 # 
 # listB <- makeCacheMatrix(matrixA)
-
-
 ## Write a short comment describing this function
 
 ## Computes the inverse on the matrix within the list
 
 cacheSolve <- function(x, ...) {
         ## get the inverse of the matrix.
+#         x <- listB
         m <- x$getInv()
+        
         ## check if there is the matrix, if yes: print the message.
         if(!is.null(m)) {
                 print("getting cached data")
